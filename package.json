@@ -1,0 +1,28 @@
+{
+  "name": "webpack-setup",
+  "version": "1.0.0",
+  "description": "In this project I configure webpack",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsheporamantso/Webpack-Setup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsheporamantso/Webpack-Setup/issues"
+  },
+  "homepage": "https://github.com/tsheporamantso/Webpack-Setup#readme",
+  "devDependencies": {
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
