@@ -9,16 +9,16 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
-  devtool: 'inline-source-map',
-  devServer: {
-    static: './dist',
-  },
+
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
             title: 'Development',
         }),
     ],
+    devServer: {
+        static: { directory: path.resolve(__dirname, 'dist') }, port: 3000, open: true, hot: true, compress: true, historyApiFallback: true,
+      },
     module: {
         rules: [
             {
@@ -27,7 +27,5 @@ module.exports = {
             },
         ],
     },
-    optimization: {
-        runtimeChunk: 'single',
-      },
+   
 };
